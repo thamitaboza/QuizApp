@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.quizapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.quizapp"
@@ -58,7 +58,9 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
+    implementation("androidx.compose.material3:material3:1.1.2")
+    implementation("androidx.compose.material:material-icons-extended:1.5.4")
+    implementation("androidx.navigation:navigation-compose:2.7.5")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
